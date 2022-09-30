@@ -15,13 +15,13 @@ $buku = query("SELECT * FROM buku");
 
 <head>
   <meta charset="UTF-8">
-  <title>prakweb_2022_b_203040079</title>
+  <title>prakweb_b_203040079</title>
   <link rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 </head>
 
 <body class="luar">
-  <h1 class="judul">RezaBook Store.</h1>
+  <h1 class="judul">Almanac Store.</h1>
   <div class="add2">
     <a href="php/tambah.php">Tambah Data</a>
   </div>
