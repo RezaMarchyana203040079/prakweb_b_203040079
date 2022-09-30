@@ -45,8 +45,8 @@ $buku = query("SELECT * FROM buku");
       <tr class="isi">
         <td><?= $i ?></td>
         <td>
-          <a href="php/ubah.php?id=<?= $bu['id'] ?>"><button class="ubah">Ubah</button></a>
-          <a href="php/hapus.php?id=<?= $bu['id'] ?>" onclick="return confirm('Hapus data??')"><button class="hapus">Hapus</button></a>
+          <a href="php/ubah.php?id=<?= $bu['id_buku'] ?>"><button class="ubah">Ubah</button></a>
+          <a href="php/hapus.php?id=<?= $bu['id_buku'] ?>" onclick="return confirm('Hapus data??')"><button class="hapus">Hapus</button></a>
         </td>
         <td><?= $bu['kode_buku']; ?></td>
         <td><?= $bu['judul_buku']; ?></td>

@@ -41,10 +41,10 @@ function tambah($data)
   return mysqli_affected_rows($conn);
 }
 
-function hapus($id)
+function hapus($id_buku)
 {
   $conn = koneksi();
-  mysqli_query($conn, "DELETE FROM buku WHERE id = '$id' ");
+  mysqli_query($conn, "DELETE FROM buku WHERE id_buku = '$id_buku' ");
 
   return mysqli_affected_rows($conn);
 }
@@ -52,7 +52,7 @@ function hapus($id)
 function ubah($data)
 {
   $conn = koneksi();
-  $id = htmlspecialchars($data['id']);
+  $id_buku = htmlspecialchars($data['id_buku']);
   $kode_buku = htmlspecialchars($data['kode_buku']);
   $judul_buku = htmlspecialchars($data['judul_buku']);
   $penulis_buku = htmlspecialchars($data['penulis_buku']);
@@ -70,7 +70,7 @@ function ubah($data)
             tahun_penerbit = '$tahun_penerbit',
             stok = '$stok',
             gambar = '$gambar'
-            WHERE id = '$id'
+            WHERE id_buku = '$id_buku'
             ";
 
   mysqli_query($conn, $query) or die(mysqli_error($conn));
